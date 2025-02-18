@@ -852,6 +852,8 @@ public class TicTacToeGUI extends javax.swing.JFrame {
         ButtonSpace8.setText(" ");
         ButtonSpace9.setText(" ");
         
+        LabelPlayerTurnWin.setText("Player One's turn!");
+        
         //hide the button again
         ButtonRestart.setVisible(false);
 
