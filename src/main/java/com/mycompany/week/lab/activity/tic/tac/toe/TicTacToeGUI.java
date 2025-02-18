@@ -471,15 +471,18 @@ public class TicTacToeGUI extends javax.swing.JFrame {
 
         //if the spot isn't taken set the text to the current player's symbol and switch players
         if (!ButtonSpace1.getText().equals("X") && !ButtonSpace1.getText().equals("O")) {
-
+            
             //if the game isn't already over we can move
             if (checkEndCondition() == false){
-                
+
                 ButtonSpace1.setText(currentPlayer);
-                
+
             }
             
             //if it's not an end condition we switch players
+            //we don't need the string of disabling the buttons !! 
+            //the code would work if it were just if checkEndCondition() == false {switchplayers}
+            //but it looks cool lol
             if (checkEndCondition() == true) {
 
                 ButtonSpace1.setEnabled(false);
@@ -500,6 +503,7 @@ public class TicTacToeGUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_ButtonSpace1MouseClicked
 
+    //this isn't necessary
     private void ButtonSpace1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonSpace1MouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_ButtonSpace1MouseEntered
@@ -613,14 +617,14 @@ public class TicTacToeGUI extends javax.swing.JFrame {
 
         //if the spot isn't taken set the text to the current player's symbol and switch players
         if (!ButtonSpace5.getText().equals("X") && !ButtonSpace5.getText().equals("O")) {
-            
+
             //if the game isn't already over we can move
-            if (checkEndCondition() == false){
-                
+            if (checkEndCondition() == false) {
+
                 ButtonSpace5.setText(currentPlayer);
-                
+
             }
-            
+
             //if it's not an end condition we switch players
             if (checkEndCondition() == true) {
 
